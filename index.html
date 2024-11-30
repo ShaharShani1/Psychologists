@@ -6,95 +6,198 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>פסיכולוגית התפתחותית - ניצן שטיין שני</title>
     <style>
+        /* כל הגדרת העיצוב הכללית */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #fafafa;
             margin: 0;
             padding: 0;
+            direction: rtl; /* הגדרת אוריינטציה מימין לשמאל */
+            text-align: right; /* כל הטקסט יהיה מיושר לימין */
         }
-
         header {
-            background-color: #333;
+            background-color: #5C8D8D; /* צבע ירוק כהה */
             color: #fff;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            border-bottom: 3px solid #4B7474;
         }
-
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        h2, h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        /* עיצוב תמונות */
+        img.profile {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-left: 30px;
+            border: 3px solid #fff;
+        }
+        img.psychologist-child {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        /* סידור תוכן */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 85%;
+            margin: auto;
         }
-
-        section {
-            margin-bottom: 40px;
+        .intro, .professional-development, .clinic-treatment, .footer {
+            margin: 50px 0;
+            padding: 40px 20px;
         }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
+        .intro {
+            background-color: #E8F8F8; /* צבע בהיר לסקשן נעים להכיר */
+            border-radius: 8px;
         }
-
-        p {
+        .professional-development {
+            background-color: #E0F7F5; /* צבע בהיר לסקשן התפתחות מקצועית */
+            border-radius: 8px;
+        }
+        .clinic-treatment {
+            background-color: #D1F1F3; /* צבע בהיר לסקשן הטיפולים */
+            border-radius: 8px;
+        }
+        .intro div, .professional-development div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .intro p {
+            flex: 1;
+            font-size: 1.1rem;
             line-height: 1.6;
         }
-
-        a {
-            color: #007bff;
+        .professional-development ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .professional-development ul li {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+        footer {
+            background-color: #5C8D8D;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            border-top: 3px solid #4B7474;
+        }
+        footer a {
+            color: white;
             text-decoration: none;
         }
-
-        .profile-pic {
-            width: 200px;
-            border-radius: 50%;
-            margin: 20px auto;
+        .whatsapp-btn {
+            background-color: #25D366;
+            padding: 12px 25px;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
         }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
+        .professional-development div {
+            width: 48%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .intro div, .professional-development div {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .intro img.profile, .professional-development img.psychologist-child {
+                margin-left: 0;
+            }
+            .intro p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>ניצן שטיין שני</h1>
         <p>פסיכולוגית התפתחותית</p>
+        <div>
+            <p>טלפון: <a href="tel:+972544491200">+972544491200</a></p>
+            <p>אימייל: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
+            <p>קליניקה ברמת חן</p>
+        </div>
     </header>
 
-    <section class="container">
-        <img src="image.png" alt="Profile Picture" class="profile-pic">
-        <h2>נעים להכיר!</h2>
-        <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
-    </section>
+    <!-- נעים להכיר -->
+    <div class="container intro">
+        <div>
+            <img src="image.png" alt="תמונה שלי" class="profile">
+            <p>נעים להכיר! בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+        </div>
+    </div>
 
-    <section class="container">
+    <!-- התפתחות מקצועית -->
+    <div class="container professional-development">
         <h2>התפתחות מקצועית</h2>
-        <ul>
-            <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
-            <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
-            <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
-            <li>אבחונים פסיכולוגיים התפתחותיים</li>
-            <li>ליווי אנשי צוות חינוכי</li>
-            <li>מטפלת במרפאה לסמכות הורית בשניידר</li>
-        </ul>
-    </section>
+        <div>
+            <div>
+                <ul>
+                    <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
+                    <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
+                    <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>אבחונים פסיכולוגיים התפתחותיים</li>
+                    <li>ליווי אנשי צוות חינוכי</li>
+                    <li>מטפלת במרפאה לסמכות הורית בשניידר</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <section class="container">
+    <!-- הטיפולים המוצעים בקליניקה -->
+    <div class="container clinic-treatment">
         <h2>הטיפולים המוצעים בקליניקה</h2>
-        <ul>
-            <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</li>
-            <li>טיפול הורה-ילד</li>
-            <li>ליווי הורים</li>
-        </ul>
-    </section>
+        <div style="display: flex; align-items: center;">
+            <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוגית עם ילד" class="psychologist-child">
+            <div>
+                <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</h3>
+                <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
 
+                <h3>טיפול הורה-ילד</h3>
+                <p>מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</p>
+
+                <h3>ליווי הורים</h3>
+                <p>מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה. חיזוק העמדה ההורית והסמכות ההורית בבית.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
         <p>ליצירת קשר: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
         <p>טלפון: <a href="tel:+972544491200">+972544491200</a></p>
-        <a href="https://wa.me/+972544491200" class="whatsapp-btn" target="_blank">שלחו לי הודעת וואטסאפ</a>
-    </footer>
-</body>
-</html>
+        <a href="https://wa.me/+972544491200" class="whatsapp-btn" target="_blank">שלחו לי הודעת
