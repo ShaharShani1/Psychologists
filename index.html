@@ -76,26 +76,14 @@
             margin-bottom: 20px;
         }
         .professional-development ul {
-            list-style: none;
-            padding: 0;
+            list-style: disc;
+            padding-right: 30px; /* Add space for bullet points */
             margin: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two columns */
-            gap: 20px;
+            font-size: 1.2rem;
         }
         .professional-development ul li {
-            font-size: 1.2rem;
             margin-bottom: 15px;
-            position: relative;
-            padding-left: 30px; /* Add space for icon */
-        }
-        .professional-development ul li::before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 1.5rem;
-            color: #5C8D8D;
+            direction: rtl; /* Ensure bullet points align correctly */
         }
         /* Clinic Treatments */
         .clinic-treatment {
@@ -109,8 +97,8 @@
             justify-content: space-between;
         }
         .clinic-treatment img {
-            width: 250px;
-            height: 250px;
+            width: 350px; /* Increased the image size */
+            height: 350px;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -155,14 +143,11 @@
             }
             .intro img, .clinic-treatment img {
                 margin-bottom: 20px;
-            }
-            .professional-development div {
-                flex-direction: column;
+                width: 100%; /* Ensure images are responsive */
+                height: auto;
             }
             .professional-development ul {
-                grid-template-columns: 1fr; /* Stack in one column on small screens */
-            }
-            .professional-development ul li {
+                padding-right: 15px;
                 font-size: 1.1rem;
             }
         }
