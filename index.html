@@ -13,6 +13,8 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            direction: rtl; /* הגדרת אוריינטציה מימין לשמאל */
+            text-align: right; /* כל הטקסט יהיה מיושר לימין */
         }
         header {
             background-color: #4A90E2; /* צבע תכלת כהה */
@@ -34,7 +36,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-left: 20px;
         }
         /* סידור תוכן */
         .container {
@@ -43,6 +45,16 @@
         }
         .intro, .professional-development, .clinic-treatment, .footer {
             margin: 40px 0;
+            padding: 20px;
+        }
+        .intro {
+            background-color: #f0f8ff; /* צבע בהיר לסקשן נעים להכיר */
+        }
+        .professional-development {
+            background-color: #e6f7ff; /* צבע בהיר לסקשן התפתחות מקצועית */
+        }
+        .clinic-treatment {
+            background-color: #e0f7fa; /* צבע בהיר לסקשן הטיפולים */
         }
         .intro div, .professional-development div {
             display: flex;
@@ -104,14 +116,14 @@
     <div class="container professional-development">
         <h2>התפתחות מקצועית</h2>
         <div>
-            <div style="width: 48%;">
+            <div style="width: 48%; float: right;">
                 <ul>
                     <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
                     <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
                     <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
                 </ul>
             </div>
-            <div style="width: 48%;">
+            <div style="width: 48%; float: right;">
                 <ul>
                     <li>אבחונים פסיכולוגיים התפתחותיים</li>
                     <li>ליווי אנשי צוות חינוכי</li>
@@ -125,7 +137,7 @@
     <div class="container clinic-treatment">
         <h2>הטיפולים המוצעים בקליניקה</h2>
         <div style="display: flex; align-items: center;">
-            <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוגית עם ילד" style="width: 200px; height: 200px; border-radius: 10px; margin-right: 20px;">
+            <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוגית עם ילד" style="width: 200px; height: 200px; border-radius: 10px; margin-left: 20px;">
             <div>
                 <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</h3>
                 <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
