@@ -1,104 +1,156 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ניצן שטיין שני - פסיכולוגית התפתחותית</title>
+  <title>פסיכולוגים - פינת טיפולית</title>
   <style>
+    /* כלליים */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdf2e9;
+      background-color: #f4f4f9;
       color: #333;
-      line-height: 1.6;
+      direction: rtl; /* התאמה לכתיבה מימין לשמאל */
     }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h3 {
+      color: #16a085;
+    }
+
+    /* כותרת */
     header {
-      background: linear-gradient(to bottom, #f2cbc0, #fdf2e9);
-      padding: 20px;
-      text-align: center;
-      color: #333;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    header p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    .section h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #5b5b5b;
-    }
-    .image-container {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .image-container img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      background: #f2cbc0;
+      background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 10px;
-      font-size: 14px;
+      padding: 20px;
     }
-    footer a {
+
+    /* ניווט */
+    nav {
+      background-color: #16a085;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* תוכן */
+    .content {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    /* סגנון לחלק של הטיפולים המוצעים בקליניקה */
+    .treatments {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .treatments img {
+      width: 45%;
+      border-radius: 8px;
+    }
+    .treatments div {
+      width: 50%;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- כותרת ראשית -->
   <header>
-    <h1>ניצן שטיין שני</h1>
-    <p>פסיכולוגית התפתחותית</p>
-    <p>📞 054-4491200 | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
+    <h1>ברוכים הבאים לפינת הפסיכולוגים</h1>
   </header>
-  
-  <div class="container">
-    <div class="image-container">
-      <img src="your-image.jpeg" alt="Image of psychologist with child">
-    </div>
-    
-    <div class="section">
-      <h2>נעים להכיר</h2>
-      <p>בעלת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית מאוניברסיטת תל אביב.</p>
-    </div>
-    
-    <div class="section">
-      <h2>ההתמחויות המקצועיות</h2>
-      <ul>
-        <li>ייעוץ הורים</li>
-        <li>עבודה פסיכולוגית בגישה משולבת</li>
-        <li>עבודה על חיזוק התפתחות הילד</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>טיפולים מומלצים בקליניקה</h2>
-      <p>טיפול פרטני רגשי לילדים, טיפול הורה-ילד, ליווי התפתחותי ועוד.</p>
-    </div>
+
+  <!-- ניווט -->
+  <nav>
+    <a href="#about">אודות</a>
+    <a href="#services">שירותים</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+
+  <!-- תוכן -->
+  <div class="content">
+
+    <!-- אודות -->
+    <section id="about" class="section">
+      <h2>נעים להכיר😊</h2>
+      <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. <br>
+      כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן- פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+      
+      <p>התפתחות מקצועית:<br>
+      פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.<br>
+      התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר. במסגרת עבודתי בשירות הפסיכולוגי ליוויתי אנשי צוות חינוכי; גננות, יועצות חינוכיות. וליווי של ילדים והוריהם במנעד רחב של טיפולים.<br>
+      כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית, אני מבצעת אבחונים פסיכולוגיים התפתחותיים, אבחוני תקשורת, אבחונים רגשיים ומטפלת בילדים והוריהם.<br>
+      בנוסף, עובדת כפסיכולוגית במרפאה לסמכות הורית בשניידר, אני מטפלת בהורים לילדים עם בעיות התנהגות על ידי מתן הדרכה קצרת טווח וחיזוק העמדה ההורית אל מול הילד.</p>
+      
+      <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוג עם ילד">
+    </section>
+
+    <!-- שירותים -->
+    <section id="services" class="section">
+      <h2>הטיפולים המוצעים בקליניקה</h2>
+      <div class="treatments">
+        <img src="image.png" alt="תמונה של המטפלת">
+        <div>
+          <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</h3>
+          <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
+          
+          <h3>טיפול הורה-ילד</h3>
+          <p>מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</p>
+
+          <h3>ליווי הורים</h3>
+          <p>מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה.<br>
+          חיזוק העמדה ההורית והסמכות ההורית בבית.<br>
+          ליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים לאורך הדרך.</p>
+        </div>
+      </div>
+    </section>
+
+   <!-- צור קשר -->
+<section id="contact" class="section">
+  <h2>אני מאמינה שהתחלה של טיפול היא תחילתה של דרך ומערכת יחסים הנרקמת בין מטפל ומטופל.</h2>
+  <p>מעבר לידע המקצועי, חשוב שתתהווה תחושת חיבור והתאמה.<br>
+  אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
+
+  <!-- קישור להודעת WhatsApp -->
+  <p>ליצירת קשר מיידי ב-WhatsApp, לחצו על מספר הטלפון:</p>
+  <a href="https://wa.me/97254491200" target="_blank" style="font-size: 18px; color: #16a085; text-decoration: none;">052-1234567</a>
+</section>
+
+
   </div>
-  
-  <footer>
-    <p>📞 054-4491200 | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
-    <p>© 2024 ניצן שטיין שני</p>
-  </footer>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 פינת הפסיכולוגים | כל הזכויות שמורות</p>
+  </div>
+
 </body>
 </html>
