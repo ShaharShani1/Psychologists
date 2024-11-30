@@ -5,95 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>פסיכולוגית התפתחותית - ניצן שטיין שני</title>
-    <style>
-        /* כל הגדרת העיצוב הכללית */
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            direction: rtl; /* הגדרת אוריינטציה מימין לשמאל */
-            text-align: right; /* כל הטקסט יהיה מיושר לימין */
-        }
-        header {
-            background-color: #4A90E2; /* צבע תכלת כהה */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-        }
-        h2, h3 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        /* עיצוב תמונות */
-        img.profile {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-left: 20px;
-        }
-        /* סידור תוכן */
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-        .intro, .professional-development, .clinic-treatment, .footer {
-            margin: 40px 0;
-            padding: 20px;
-        }
-        .intro {
-            background-color: #f0f8ff; /* צבע בהיר לסקשן נעים להכיר */
-        }
-        .professional-development {
-            background-color: #e6f7ff; /* צבע בהיר לסקשן התפתחות מקצועית */
-        }
-        .clinic-treatment {
-            background-color: #e0f7fa; /* צבע בהיר לסקשן הטיפולים */
-        }
-        .intro div, .professional-development div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .intro p {
-            flex: 1;
-        }
-        .professional-development ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .professional-development ul li {
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #4A90E2;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        .whatsapp-btn {
-            background-color: #25D366;
-            padding: 10px 20px;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <h1>ניצן שטיין שני</h1>
         <p>פסיכולוגית התפתחותית</p>
@@ -104,54 +19,57 @@
         </div>
     </header>
 
-    <!-- נעים להכיר -->
-    <div class="container intro">
-        <div>
+    <section class="hero">
+        <div class="container">
             <img src="image.png" alt="תמונה שלי" class="profile">
-            <p>נעים להכיר! בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+            <h2>נעים להכיר!</h2>
+            <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+            <a href="#" class="button">קבעו פגישה</a>
         </div>
-    </div>
+    </section>
 
-    <!-- התפתחות מקצועית -->
-    <div class="container professional-development">
-        <h2>התפתחות מקצועית</h2>
-        <div>
-            <div style="width: 48%; float: right;">
-                <ul>
-                    <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
-                    <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
-                    <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
-                </ul>
-            </div>
-            <div style="width: 48%; float: right;">
-                <ul>
-                    <li>אבחונים פסיכולוגיים התפתחותיים</li>
-                    <li>ליווי אנשי צוות חינוכי</li>
-                    <li>מטפלת במרפאה לסמכות הורית בשניידר</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- הטיפולים המוצעים בקליניקה -->
-    <div class="container clinic-treatment">
-        <h2>הטיפולים המוצעים בקליניקה</h2>
-        <div style="display: flex; align-items: center;">
-            <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוגית עם ילד" style="width: 200px; height: 200px; border-radius: 10px; margin-left: 20px;">
-            <div>
-                <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</h3>
-                <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
-
-                <h3>טיפול הורה-ילד</h3>
-                <p>מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</p>
-
-                <h3>ליווי הורים</h3>
-                <p>מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה. חיזוק העמדה ההורית והסמכות ההורית בבית.</p>
+    <section class="about">
+        <div class="container">
+            <h2>התפתחות מקצועית</h2>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
+                        <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
+                        <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>אבחונים פסיכולוגיים התפתחותיים</li>
+                        <li>ליווי אנשי צוות חינוכי</li>
+                        <li>מטפלת במרפאה לסמכות הורית בשניידר</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
+    <section class="services">
+        <div class="container">
+            <h2>הטיפולים המוצעים בקליניקה</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</h3>
+                    <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
+                </div>
+                <div class="col">
+                    <h3>טיפול הורה-ילד</h3>
+                    <p>מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</p>
+                </div>
+                <div class="col">
+                    <h3>ליווי הורים</h3>
+                    <p>מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה. חיזוק העמדה ההורית והסמכות ההורית בבית.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
         <p>ליצירת קשר: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
@@ -159,5 +77,6 @@
         <a href="https://wa.me/+972544491200" class="whatsapp-btn" target="_blank">שלחו לי הודעת וואטסאפ</a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
