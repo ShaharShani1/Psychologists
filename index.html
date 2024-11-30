@@ -75,19 +75,27 @@
             font-size: 2rem;
             margin-bottom: 20px;
         }
-        .professional-development div {
-            display: flex;
-            justify-content: space-between;
-        }
         .professional-development ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
             margin: 0;
-            width: 48%;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            gap: 20px;
         }
         .professional-development ul li {
             font-size: 1.2rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px; /* Add space for icon */
+        }
+        .professional-development ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: #5C8D8D;
         }
         /* Clinic Treatments */
         .clinic-treatment {
@@ -152,8 +160,10 @@
                 flex-direction: column;
             }
             .professional-development ul {
-                width: 100%;
-                margin-bottom: 20px;
+                grid-template-columns: 1fr; /* Stack in one column on small screens */
+            }
+            .professional-development ul li {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -182,17 +192,13 @@
     <!-- התפתחות מקצועית -->
     <div class="professional-development">
         <h2>התפתחות מקצועית</h2>
-        <div>
-            <ul>
-                <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
-                <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
-                <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
-            </ul>
-            <ul>
-                <li>אבחונים פסיכולוגיים התפתחותיים</li>
-                <li>ליווי אנשי צוות חינוכי</li>
-            </ul>
-        </div>
+        <ul>
+            <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
+            <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
+            <li>עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
+            <li>אבחונים פסיכולוגיים התפתחותיים</li>
+            <li>ליווי אנשי צוות חינוכי</li>
+        </ul>
     </div>
 
     <!-- הטיפולים המוצעים בקליניקה -->
