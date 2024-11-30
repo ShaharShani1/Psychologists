@@ -185,12 +185,58 @@
         </div>
     </header>
 
-    <!-- נעים להכיר -->
-    <div class="intro">
-        <img src="image.png" alt="תמונה שלי">
-        <p>נעים להכיר! בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
-    </div>
+ <!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נעים להכיר</title>
+    <style>
+        .profile-img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
 
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 70%;
+                max-width: 150px;
+            }
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+
+        .intro .text {
+            margin-right: 20px;
+        }
+
+        .intro .photo {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- נעים להכיר Section -->
+    <section class="intro">
+        <div class="text">
+            <h2>נעים להכיר</h2>
+            <p>😊 בהכשרתי פסיכולוגית התפתחותית...</p>
+            <p>אני בוגרת תואר ראשון במדעי ההתנהגות...</p>
+        </div>
+        <div class="photo">
+            <img src="image.png" alt="Profile Image" class="profile-img">
+        </div>
+    </section>
+
+</body>
+</html>
    <!-- התפתחות מקצועית Section -->
 <section id="professional-development">
     <h2>התפתחות מקצועית</h2>
