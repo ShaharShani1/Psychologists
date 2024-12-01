@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ניצן שטיין שני - פסיכולוגית התפתחותית</title>
+    <title>פסיכולוגית התפתחותית</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,7 +12,6 @@
             padding: 0;
             color: #333;
             line-height: 1.8;
-            background-color: #f5f5f5;
         }
         header {
             background-color: #d9e5ff;
@@ -27,18 +26,6 @@
         header p {
             margin: 5px 0;
         }
-        header a.call-button {
-            display: inline-block;
-            background-color: #0056b3;
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        header a.call-button:hover {
-            background-color: #004494;
-        }
         .container {
             width: 90%;
             max-width: 1000px;
@@ -50,11 +37,52 @@
             border-radius: 8px;
         }
         section:nth-child(even) {
-            background-color: #ffffff;
+            background-color: #f9f9f9;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .section-title {
+            font-size: 1.6em;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .treatments img {
+            width: 100%;
+            max-width: 300px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .treatments {
+            overflow: auto;
+        }
+        footer {
+            background-color: #d9e5ff;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .contact-details {
+            margin-top: 10px;
         }
         .contact-form {
-            background-color: #f4f4f4;
+            margin: 40px 0;
             padding: 20px;
+            background-color: #f4f4f4;
             border-radius: 8px;
         }
         .contact-form label {
@@ -80,23 +108,20 @@
         .contact-form button:hover {
             background-color: #004494;
         }
-        footer {
-            background-color: #d9e5ff;
-            padding: 20px;
-            text-align: center;
-            color: #333;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>ניצן שטיין שני</h1>
-        <p>פסיכולוגית התפתחותית</p>
-        <a href="tel:+972544491200" class="call-button">📞 התקשר עכשיו</a>
-        <p>קליניקה ברמת חן, רמת גן</p>
+        <div>
+            <h1>ניצן שטיין שני</h1>
+            <p>פסיכולוגית התפתחותית</p>
+            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a> | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
+        </div>
     </header>
     <div class="container">
-        <section id="intro">
+        <section class="profile-section">
+            <img src="image.png" alt="תמונת פרופיל">
+            <div>
             <h2>נעים להכיר</h2>
             <p>
                 בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו.
@@ -122,7 +147,7 @@
         </section>
         <section class="contact-form">
             <h2>אשמח לשמוע ממך</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
                 <label for="first-name">שם פרטי</label>
                 <input type="text" id="first-name" name="first-name" required>
                 <label for="last-name">שם משפחה</label>
