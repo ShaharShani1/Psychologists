@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>פסיכולוגית התפתחותית</title>
+    <title>ניצן שטיין שני - פסיכולוגית התפתחותית</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,6 +12,7 @@
             padding: 0;
             color: #333;
             line-height: 1.8;
+            background-color: #f5f5f5;
         }
         header {
             background-color: #d9e5ff;
@@ -26,6 +27,18 @@
         header p {
             margin: 5px 0;
         }
+        header a.call-button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        header a.call-button:hover {
+            background-color: #004494;
+        }
         .container {
             width: 90%;
             max-width: 1000px;
@@ -37,34 +50,35 @@
             border-radius: 8px;
         }
         section:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
         }
-        .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .profile-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        .section-title {
-            font-size: 1.6em;
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        .treatments img {
-            width: 200px;
-            float: left;
-            margin-right: 20px;
+        .contact-form {
+            background-color: #f4f4f4;
+            padding: 20px;
             border-radius: 8px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #004494;
         }
         footer {
             background-color: #d9e5ff;
@@ -72,69 +86,57 @@
             text-align: center;
             color: #333;
         }
-        .contact-details {
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1>ניצן שטיין שני</h1>
-            <p>פסיכולוגית התפתחותית</p>
-            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a> | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
-        </div>
+        <h1>ניצן שטיין שני</h1>
+        <p>פסיכולוגית התפתחותית</p>
+        <a href="tel:+972544491200" class="call-button">📞 התקשר עכשיו</a>
+        <p>קליניקה ברמת חן, רמת גן</p>
     </header>
     <div class="container">
-        <section class="profile-section">
-            <img src="image.png" alt="תמונת פרופיל">
-            <div>
-                <h2 class="section-title">נעים להכיר</h2>
-                <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
-            </div>
+        <section id="intro">
+            <h2>נעים להכיר</h2>
+            <p>
+                בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו.
+                כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.
+            </p>
         </section>
-        <section>
-            <h2 class="section-title">התפתחות מקצועית</h2>
+        <section id="professional-development">
+            <h2>התפתחות מקצועית</h2>
             <ul>
-                <li>פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.</li>
-                <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר.</li>
-                <li>כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית, מבצעת אבחונים פסיכולוגיים התפתחותיים, אבחוני תקשורת ואבחונים רגשיים, ומטפלת בילדים והוריהם.</li>
-                <li>עובדת כפסיכולוגית במרפאה לסמכות הורית בשניידר, מטפלת בהורים לילדים עם בעיות התנהגות, נותנת הדרכה קצרת טווח וחיזוק העמדה ההורית אל מול הילד.</li>
-                <li>מלווה הורים ומטפלת בצמתי התפתחות משמעותיים לאורך הדרך.</li>
+                <li>פרקטיקום במכון להתפתחות הילד באסף הרופא.</li>
+                <li>התמחות בשירות הפסיכולוגי החינוכי של עיריית רחובות.</li>
+                <li>עבודה במכון להתפתחות הילד בכללית.</li>
+                <li>טיפול במרפאה לסמכות הורית בשניידר.</li>
             </ul>
         </section>
-        <section class="treatments">
-            <h2 class="section-title">הטיפולים המוצעים בקליניקה</h2>
+        <section id="treatments">
+            <h2>הטיפולים המוצעים בקליניקה</h2>
             <ul>
-                <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים: לילדים החווים אתגרים ברמה הרגשית, חברתית והתנהגותית, קשיי קשב וריכוז והתמודדות עם מצבי משבר.</li>
-                <li>טיפול הורה-ילד: מיקוד בקשר הורה-ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</li>
-                <li>ליווי הורים: מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה, חיזוק העמדה ההורית והסמכות בבית, וליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים.</li>
+                <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים</li>
+                <li>טיפול הורה-ילד</li>
+                <li>ליווי הורים</li>
             </ul>
         </section>
-    </div>
-
-      </section>
         <section class="contact-form">
-            <h2 class="section-title">אשמח לשמוע ממך</h2>
-            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+            <h2>אשמח לשמוע ממך</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <label for="first-name">שם פרטי</label>
                 <input type="text" id="first-name" name="first-name" required>
-                
                 <label for="last-name">שם משפחה</label>
                 <input type="text" id="last-name" name="last-name" required>
-                
                 <label for="phone">מספר טלפון</label>
                 <input type="tel" id="phone" name="phone" required>
-                
                 <label for="email">כתובת דואר אלקטרוני</label>
                 <input type="email" id="email" name="email" required>
-                
                 <label for="message">ההודעה שלך</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                
                 <button type="submit">שלח</button>
             </form>
-      
+        </section>
+    </div>
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
         <div class="contact-details">
