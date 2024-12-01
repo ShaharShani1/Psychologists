@@ -12,11 +12,14 @@
             padding: 0;
             color: #333;
             line-height: 1.8;
-             }
+        }
         header {
             background-color: #d9e5ff;
             padding: 20px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         header h1 {
             margin: 0;
@@ -51,6 +54,19 @@
         section:nth-child(even) {
             background-color: #f9f9f9;
         }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #0073e6;
+            margin-bottom: 20px;
+        }
         .contact-form {
             background-color: #f4f4f4;
             padding: 20px;
@@ -84,6 +100,7 @@
             padding: 20px;
             text-align: center;
             color: #333;
+        }
     </style>
 </head>
 <body>
@@ -91,32 +108,24 @@
         <div>
             <h1>ניצן שטיין שני</h1>
             <p>פסיכולוגית התפתחותית</p>
-            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a> | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
+        </div>
+        <div>
+            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a></p>
+            <p>📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
         </div>
     </header>
+
     <div class="container">
-     <div class="profile-container">
-        <img src="image.png" alt="תמונה שלי" class="profile-image">
-         <style>
-    .profile-container {
-        display: flex;
-        align-items: center;
-    }
-    .profile-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 20px;
-        border: 2px solid #0073e6;
-    }
-</style>
-            <div>
-                <h2 class="section-title">נעים להכיר</h2>
+        <section>
+            <h2>נעים להכיר</h2>
+            <div class="profile-container">
+                <img src="image.png" alt="תמונה שלי" class="profile-image">
                 <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
             </div>
         </section>
+
         <section>
-            <h2 class="section-title">התפתחות מקצועית</h2>
+            <h2>התפתחות מקצועית</h2>
             <ul>
                 <li>פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.</li>
                 <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר.</li>
@@ -125,20 +134,19 @@
                 <li>מלווה הורים ומטפלת בצמתי התפתחות משמעותיים לאורך הדרך.</li>
             </ul>
         </section>
-        <section class="treatments">
-            <h2 class="section-title">הטיפולים המוצעים בקליניקה</h2>
+
+        <section>
+            <h2>הטיפולים המוצעים בקליניקה</h2>
             <ul>
                 <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים: לילדים החווים אתגרים ברמה הרגשית, חברתית והתנהגותית, קשיי קשב וריכוז והתמודדות עם מצבי משבר.</li>
                 <li>טיפול הורה-ילד: מיקוד בקשר הורה-ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</li>
                 <li>ליווי הורים: מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה, חיזוק העמדה ההורית והסמכות בבית, וליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים.</li>
             </ul>
         </section>
-    </div>
 
-      </section>
-    <section class="contact-form">
-            <h2 class="section-title">אשמח לשמוע ממך</h2>
-        <form action="https://formsubmit.co/nitzanstein24@gmail.com" method="POST">
+        <section class="contact-form">
+            <h2>אשמח לשמוע ממך</h2>
+            <form action="https://formsubmit.co/nitzanstein24@gmail.com" method="POST">
                 <label for="first-name">שם פרטי</label>
                 <input type="text" id="first-name" name="first-name" required>
                 
@@ -157,7 +165,8 @@
                 <button type="submit">שלח</button>
             </form>
         </section>
-      
+    </div>
+
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
         <div class="contact-details">
