@@ -9,135 +9,98 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
         header {
-            background-color: #f4b4c5;
-            padding: 10px;
-            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #f0f8ff;
+            padding: 10px 20px;
         }
-        header div {
+        header .info {
             text-align: right;
         }
-        header h1 {
+        header .info h1 {
             margin: 0;
         }
-        header small {
-            display: block;
+        header .info p {
+            margin: 2px 0;
         }
-        .phone-icon {
-            display: flex;
-            align-items: center;
+        header .phone-icon {
+            font-size: 1.5rem;
+            color: #0073e6;
         }
-        .phone-icon img {
-            width: 24px;
-            height: 24px;
-            margin-left: 10px;
-        }
-        .main {
+        .section {
             padding: 20px;
+            margin: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
-        section {
-            margin-bottom: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+        .section img {
+            max-width: 100%;
+            height: auto;
         }
-        .form-section {
-            background-color: #f9f9f9;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        form input, form textarea, form button {
+        .form-section input, .form-section textarea, .form-section button {
+            width: 100%;
+            margin: 5px 0;
             padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            font-size: 1rem;
         }
-        form button {
-            background-color: #f4b4c5;
-            color: white;
+        .form-section button {
+            background-color: #0073e6;
+            color: #fff;
             border: none;
             cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: row-reverse;
-            }
-            .phone-icon {
-                justify-content: flex-start;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
+        <div class="info">
             <h1>ניצן שטיין שני</h1>
-            <small>פסיכולוגית התפתחותית</small>
-            <small>קליניקה ברמת חן, רמת גן</small>
+            <p>פסיכולוגית התפתחותית</p>
+            <p>קליניקה ברמת חן, רמת גן</p>
         </div>
-        <div class="phone-icon">
-            <a href="tel:+972544491200"><img src="phone-icon.png" alt=></a>
-        </div>
+        <a href="tel:+972544491200" class="phone-icon">📞</a>
     </header>
-    <main class="main">
-        <section>
-            <img src="image.png" alt="תמונת פרופיל">
-            <div>
-                <h2 class="section-title">נעים להכיר</h2>
-                <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
-            </div>
-        </section>
-        <section>
-            <h2 class="section-title">התפתחות מקצועית</h2>
-            <ul>
-                <li>פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.</li>
-                <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר.</li>
-                <li>כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית, מבצעת אבחונים פסיכולוגיים התפתחותיים, אבחוני תקשורת ואבחונים רגשיים, ומטפלת בילדים והוריהם.</li>
-                <li>עובדת כפסיכולוגית במרפאה לסמכות הורית בשניידר, מטפלת בהורים לילדים עם בעיות התנהגות, נותנת הדרכה קצרת טווח וחיזוק העמדה ההורית אל מול הילד.</li>
-                <li>מלווה הורים ומטפלת בצמתי התפתחות משמעותיים לאורך הדרך.</li>
-            </ul>
-        </section>
-        <section class="treatments">
-            <h2 class="section-title">הטיפולים המוצעים בקליניקה</h2>
-            <ul>
-                <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים: לילדים החווים אתגרים ברמה הרגשית, חברתית והתנהגותית, קשיי קשב וריכוז והתמודדות עם מצבי משבר.</li>
-                <li>טיפול הורה-ילד: מיקוד בקשר הורה-ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</li>
-                <li>ליווי הורים: מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה, חיזוק העמדה ההורית והסמכות בבית, וליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים.</li>
-            </ul>
-        </section>
+    <div class="section">
+        <h2>נעים להכיר</h2>
+        <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו.
+כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן- פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+
+        <p>התפתחות מקצועית</p>
+        <ul>
+            <li>פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.</li>
+            <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר. במסגרת עבודתי בשירות הפסיכולוגי ליוויתי אנשי צוות חינוכי; גננות, יועצות חינוכיות. וליווי של ילדים והוריהם במנעד רחב של טיפולים.</li>
+            <li>כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית, אני מבצעת אבחונים פסיכולוגיים התפתחותיים, אבחוני תקשורת, אבחונים רגשיים ומטפלת בילדים והוריהם.</li>
+            <li>בנוסף, עובדת כפסיכולוגית במרפאה לסמכות הורית בשניידר, אני מטפלת בהורים לילדים עם בעיות התנהגות על ידי מתן הדרכה קצרת טווח וחיזוק העמדה ההורית אל מול הילד.</li>
+        </ul>
+
+        <img src="image.png" alt="תמונה שלי">
     </div>
 
-      </section>
-    <section class="contact-form">
-            <h2 class="section-title">אשמח לשמוע ממך</h2>
-            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
-                <label for="first-name">שם פרטי</label>
-                <input type="text" id="first-name" name="first-name" required>
-                
-                <label for="last-name">שם משפחה</label>
-                <input type="text" id="last-name" name="last-name" required>
-                
-                <label for="phone">מספר טלפון</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="email">כתובת דואר אלקטרוני</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">ההודעה שלך</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">שלח</button>
-            </form>
-        </section>
-      
+    <div class="section">
+        <h2>הטיפולים המוצעים בקליניקה</h2>
+        <ul>
+            <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים - לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</li>
+            <li>טיפול הורה-ילד - מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</li>
+            <li>ליווי הורים - מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה. חיזוק העמדה ההורית והסמכות ההורית בבית. ליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים לאורך הדרך.</li>
+        </ul>
+        <img src="Image of psychologist with child.jpeg" alt="תמונה עם ילדים">
+    </div>
+
+    <div class="form-section">
+        <h2>אשמח לשמוע ממך</h2>
+        <form action="https://formsubmit.co/nitzanstein24@gmail.com" method="POST">
+            <input type="text" name="first-name" placeholder="שם פרטי" required>
+            <input type="text" name="last-name" placeholder="שם משפחה" required>
+            <input type="tel" name="phone" placeholder="מספר טלפון" required>
+            <input type="email" name="email" placeholder="כתובת דואר אלקטרוני" required>
+            <textarea name="message" placeholder="ההודעה שלך" rows="4" required></textarea>
+            <button type="submit">שלח</button>
+        </form>
+    </div>
+
+  
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
         <div class="contact-details">
