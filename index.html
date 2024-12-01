@@ -1,276 +1,123 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>פסיכולוגית התפתחותית - ניצן שטיין שני</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>פסיכולוגית התפתחותית</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            background-color: #fafafa;
+            font-family: 'Assistant', sans-serif;
             margin: 0;
             padding: 0;
-            direction: rtl;
-            text-align: right;
+            color: #333;
+            line-height: 1.8;
         }
         header {
-            background-color: #5C8D8D;
-            color: #fff;
+            background-color: #d9e5ff;
             padding: 20px;
-            text-align: right;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #4B7474;
+            text-align: center;
         }
-        header div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #333;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .header-info p {
+        header p {
             margin: 5px 0;
         }
-        .header-info a {
-            color: white;
-            text-decoration: none;
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        /* Intro Section */
-        .intro {
-            background-color: #E8F8F8;
-            padding: 40px 20px;
+        section {
+            margin: 40px 0;
+            padding: 20px;
             border-radius: 8px;
-            margin: 50px auto;
-            width: 85%;
+        }
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .profile-section {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 20px;
         }
-        .intro p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            width: 70%;
-        }
-        .intro img {
-            width: 160px;
-            height: 160px;
+        .profile-section img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
         }
-        /* Professional Development */
-        .professional-development {
-            background-color: #E0F7F5;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin: 50px auto;
-            width: 85%;
-        }
-        .professional-development h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .professional-development ul {
-            list-style: none;
-            padding-right: 30px;
-            margin: 0;
-            font-size: 1.2rem;
-            direction: rtl;
-        }
-        .professional-development ul li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 25px;
-        }
-        .professional-development ul li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            font-size: 2rem;
-            color: #4B7474;
-        }
-        /* Clinic Treatments */
-        .clinic-treatment {
-            background-color: #D1F1F3;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin: 50px auto;
-            width: 85%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .clinic-treatment img {
-            width: 350px; /* Adjusted image size */
-            height: 350px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-left: 30px;
-        }
-        .clinic-treatment div {
-            width: 60%;
-        }
-        .clinic-treatment h3 {
-            font-size: 1.5rem;
+        .section-title {
+            font-size: 1.6em;
+            color: #0056b3;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
         }
-        .clinic-treatment h3 i {
-            margin-left: 10px;
+        ul {
+            padding-left: 20px;
         }
-        /* Footer */
+        ul li {
+            margin: 10px 0;
+        }
+        .treatments img {
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
         footer {
-            background-color: #5C8D8D;
-            color: white;
+            background-color: #d9e5ff;
+            padding: 20px;
             text-align: center;
-            padding: 25px 0;
-            border-top: 3px solid #4B7474;
+            color: #333;
         }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        .whatsapp-btn {
-            background-color: #25D366;
-            padding: 12px 25px;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .intro, .professional-development, .clinic-treatment {
-                flex-direction: column;
-                width: 95%;
-                margin: 30px auto;
-            }
-            .intro img, .clinic-treatment img {
-                margin-bottom: 20px;
-                width: 100%; /* Ensure images are responsive */
-                height: auto;
-            }
-            .professional-development ul {
-                padding-right: 15px;
-                font-size: 1.1rem;
-            }
+        .contact-details {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <div>
             <h1>ניצן שטיין שני</h1>
             <p>פסיכולוגית התפתחותית</p>
-        </div>
-        <div class="header-info">
-            <p>טלפון: <a href="tel:+972544491200">+972544491200</a></p>
-            <p>אימייל: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
-            <p>קליניקה ברמת חן</p>
+            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a> | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
         </div>
     </header>
-
- <!DOCTYPE html>
-<html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>נעים להכיר</title>
-    <style>
-        .profile-img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            .profile-img {
-                width: 70%;
-                max-width: 150px;
-            }
-        }
-
-        .intro {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin: 20px;
-        }
-
-        .intro .text {
-            margin-right: 20px;
-        }
-
-        .intro .photo {
-            flex-shrink: 0;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- נעים להכיר Section -->
-    <section class="intro">
-        <div class="text">
-            <h2>נעים להכיר</h2>
-            <p>😊 בהכשרתי פסיכולוגית התפתחותית...</p>
-<p>נעים להכיר! בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום אני עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>        </div>
-        <div class="photo">
-            <img src="image.png" alt="Profile Image" class="profile-img">
+    <div class="container">
+        <section class="profile-section">
+            <img src="image.png" alt="תמונת פרופיל">
+            <div>
+                <h2 class="section-title">נעים להכיר</h2>
+                <p>בהכשרתי פסיכולוגית התפתחותית, בוגרת תואר ראשון במדעי ההתנהגות ותואר שני בפסיכולוגיה התפתחותית באקדמית ת"א יפו. כיום עובדת במכון להתפתחות הילד של שירותי בריאות כללית במחוז דן-פתח תקווה ובמרפאה לסמכות הורית בביה"ח שניידר.</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">התפתחות מקצועית</h2>
+            <ul>
+                <li>פרקטיקום במכון להתפתחות הילד באסף הרופא, שם עסקתי באבחונים התפתחותיים וטיפולים פסיכולוגיים וכן ליווי של ילדי המעון השיקומי של בית החולים.</li>
+                <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות, כפסיכולוגית מלווה של אשכול גני עיכוב התפתחותי ושל גני העירייה בעיר.</li>
+                <li>כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית, מבצעת אבחונים פסיכולוגיים התפתחותיים, אבחוני תקשורת ואבחונים רגשיים, ומטפלת בילדים והוריהם.</li>
+                <li>עובדת כפסיכולוגית במרפאה לסמכות הורית בשניידר, מטפלת בהורים לילדים עם בעיות התנהגות, נותנת הדרכה קצרת טווח וחיזוק העמדה ההורית אל מול הילד.</li>
+                <li>מלווה הורים ומטפלת בצמתי התפתחות משמעותיים לאורך הדרך.</li>
+            </ul>
+        </section>
+        <section class="treatments">
+            <h2 class="section-title">הטיפולים המוצעים בקליניקה</h2>
+            <img src="Image of psychologist with child.jpeg" alt="טיפול בקליניקה">
+            <ul>
+                <li>טיפול פרטני רגשי לילדים בליווי הדרכת הורים: לילדים החווים אתגרים ברמה הרגשית, חברתית והתנהגותית, קשיי קשב וריכוז והתמודדות עם מצבי משבר.</li>
+                <li>טיפול הורה-ילד: מיקוד בקשר הורה-ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</li>
+                <li>ליווי הורים: מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה, חיזוק העמדה ההורית והסמכות בבית, וליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים.</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
+        <div class="contact-details">
+            📞 <a href="tel:+972544491200">+972-54-4491200</a> | 📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a>
         </div>
-    </section>
-
+    </footer>
 </body>
 </html>
-   <!-- התפתחות מקצועית Section -->
-<section id="professional-development">
-    <h2>התפתחות מקצועית</h2>
-    <ul style="text-align: right; list-style-type: disc; padding-right: 20px;">
-        <li>פרקטיקום במכון להתפתחות הילד באסף הרופא</li>
-        <li>התמחות בשירות הפסיכולוגי חינוכי של עיריית רחובות</li>
-        <li>כיום עובדת כפסיכולוגית במכון להתפתחות הילד בכללית</li>
-        <li>התמחות בביה"ח שניידר במרפאה לסמכות הורית</li>
-        <li>ליווי אנשי צוות חינוכי וילדים במגוון טיפולים</li>
-    </ul>
-</section>
-
-    <!-- הטיפולים המוצעים בקליניקה -->
-    <div class="clinic-treatment">
-        <img src="Image of psychologist with child.jpeg" alt="תמונה של פסיכולוגית עם ילד">
-        <div>
-            <h3>טיפול פרטני רגשי לילדים בליווי הדרכת הורים <i class="fas fa-user-md"></i></h3>
-            <p>לילדים החווים אתגרים ברמה הרגשית, חברתית, התנהגותית. קשיי קשב וריכוז, התמודדות עם מצבי משבר.</p>
-
-            <h3>טיפול הורה-ילד <i class="fas fa-child"></i></h3>
-            <p>מיקוד בקשר הורה- ילד ומערכת היחסים של הילד עם הוריו מתוך הבנת היותם עוגן משמעותי לכלל שלבי ההתפתחות.</p>
-
-            <h3>ליווי הורים <i class="fas fa-users"></i></h3>
-            <p>מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה. חיזוק העמדה ההורית והסמכות ההורית בבית.</p>
-        </div>
-    </div>
-
-<!-- Footer -->
-<footer>
-    <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
-    <p>ליצירת קשר:</p>
-    <p>טלפון: <a href="tel:+972544491200">+972 544 491 200</a></p>
-    <p>אימייל: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
-    <p><a href="https://wa.me/972544491200" class="whatsapp-btn">לחצו כאן לשליחת הודעה בוואטסאפ</a></p>
-</footer>
-
-
-
