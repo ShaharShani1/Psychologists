@@ -14,7 +14,7 @@
             line-height: 1.8;
         }
         header {
-            background-color: white;
+            background-color: #d9e5ff;
             padding: 20px;
             text-align: center;
             display: flex;
@@ -29,27 +29,30 @@
         header p {
             margin: 5px 0;
         }
-        .contact-info a {
-            color: #0056b3;
+        header a.call-button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
             text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
+        header a.call-button:hover {
+            background-color: #004494;
         }
         .container {
             width: 90%;
             max-width: 1000px;
             margin: 0 auto;
         }
-        h2 {
-            color: #4a90e2;
-        }
         section {
             margin: 40px 0;
             padding: 20px;
             border-radius: 8px;
+        }
+        section:nth-child(even) {
             background-color: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .profile-container {
             display: flex;
@@ -57,10 +60,11 @@
             align-items: center;
             text-align: center;
         }
-        .profile-image {
+      .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            border: 3px solid #0056b3;
             margin-bottom: 20px;
         }
         .contact-form {
@@ -92,26 +96,10 @@
             background-color: #004494;
         }
         footer {
-            background-color: white;
+            background-color: #d9e5ff;
             padding: 20px;
             text-align: center;
             color: #333;
-        }
-        footer p {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-        footer .whatsapp-button {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer .whatsapp-button:hover {
-            background-color: #1bc959;
         }
     </style>
 </head>
@@ -121,8 +109,8 @@
             <h1>ניצן שטיין שני</h1>
             <p>פסיכולוגית התפתחותית</p>
         </div>
-        <div class="contact-info">
-            <p>📞 <a href="tel:0544491200">054-4491200</a></p>
+        <div>
+            <p>📞 <a href="tel:+972544491200">+972-54-4491200</a></p>
             <p>📧 <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
         </div>
     </header>
@@ -155,11 +143,54 @@
                 <li>ליווי הורים: מתן הדרכות קצרות טווח בנושאים בתחום ההתפתחותי כגון שינה וגמילה, חיזוק העמדה ההורית והסמכות בבית, וליווי הורים בתוך חווית ההורות ובצמתי התפתחות משמעותיים.</li>
             </ul>
         </section>
+
+        <section class="contact-form">
+            <h2>אשמח לשמוע ממך</h2>
+            <form action="https://formsubmit.co/nitzanstein24@gmail.com" method="POST">
+                <label for="first-name">שם פרטי</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">שם משפחה</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="phone">מספר טלפון</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">כתובת דואר אלקטרוני</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">ההודעה שלך</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">שלח</button>
+            </form>
+        </section>
     </div>
 
+
+    <section class="contact-form">
+            <h2>צור קשר</h2>
+            <form action="https://formsubmit.co/nitzanstein24@gmail.com" method="POST">
+                <label for="first-name">שם פרטי</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">שם משפחה</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="phone">מספר טלפון</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">כתובת דואר אלקטרוני</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">הודעה</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">שלח</button>
+            </form>
+        </section>
+    </div>
+ <!-- Footer -->
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
-        <a href="https://wa.me/972544491200" target="_blank" class="whatsapp-button">שלחו לי הודעת וואטסאפ</a>
+        <p>ליצירת קשר: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
+        <p>טלפון: <a href="tel:+972544491200">+972544491200</a></p>
+        <a href="https://wa.me/+972544491200" class="whatsapp-btn" target="_blank">שלחו לי הודעת וואטסאפ</a>
     </footer>
-</body>
+    </body>
 </html>
