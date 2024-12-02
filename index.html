@@ -5,54 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>פסיכולוגית התפתחותית</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
+   <style>
         body {
             font-family: 'Assistant', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             line-height: 1.8;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #d9e5ff;
+            background-color: #f0f8ff;
             padding: 20px;
             text-align: center;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
         header h1 {
             margin: 0;
             font-size: 1.8em;
+            color: #5c88d4;
+        }
+        header p, header a {
+            margin: 5px 0;
             color: #333;
         }
-        header p {
-            margin: 5px 0;
-        }
         header a.call-button {
-            display: inline-block;
-            background-color: #0056b3;
+            background-color: #5c88d4;
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
-            margin-top: 10px;
         }
         header a.call-button:hover {
-            background-color: #004494;
+            background-color: #4975b3;
         }
         .container {
             width: 90%;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         section {
             margin: 40px 0;
             padding: 20px;
             border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        section:nth-child(even) {
-            background-color: #f9f9f9;
+        section h2 {
+            color: #5c88d4;
         }
         .profile-container {
             display: flex;
@@ -60,11 +63,11 @@
             align-items: center;
             text-align: center;
         }
-      .profile-image {
-            width: 150px;
-            height: 150px;
+        .profile-image {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            border: 3px solid #0056b3;
+            border: 3px solid #5c88d4;
             margin-bottom: 20px;
         }
         .contact-form {
@@ -85,7 +88,7 @@
             box-sizing: border-box;
         }
         .contact-form button {
-            background-color: #0056b3;
+            background-color: #5c88d4;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -93,15 +96,26 @@
             border-radius: 4px;
         }
         .contact-form button:hover {
-            background-color: #004494;
+            background-color: #4975b3;
         }
         footer {
-            background-color: #d9e5ff;
+            background-color: #f0f8ff;
             padding: 20px;
             text-align: center;
-            color: #333;
-
-             .whatsapp-button {
+            color: #5c88d4;
+        }
+        footer p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        footer a {
+            color: #5c88d4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .whatsapp-button {
             background-color: #25d366;
             color: white;
             padding: 10px 20px;
@@ -185,8 +199,7 @@
  <!-- Footer -->
     <footer>
         <p>אשמח לפגוש אתכם ולהכיר, באופן פתוח ומקבל מתוך עמדה סקרנית ומתוך מטרה שנוכל לייצר התאמה ולצעוד את הדרך הזו יחד.</p>
-        <p>ליצירת קשר: <a href="mailto:nitzanstein24@gmail.com">nitzanstein24@gmail.com</a></p>
-        <p>טלפון: <a href="tel:+972544491200">+972544491200</a></p>
+   
         <a href="https://wa.me/972544491200" target="_blank" class="whatsapp-button">שלחו לי הודעת וואטסאפ</a>
     </footer>
     </body>
